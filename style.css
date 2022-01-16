@@ -1,0 +1,39 @@
+.personaje {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#tarjetasDePersonajes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+
+  border: 2px solid blue;
+  padding: 20px;
+  margin: 20px;
+}
+
+#tarjetas-De-Personajes {
+  display: flex;
+  flex-wrap: wrap;
+
+  border: 3px solid green;
+}
+
+.estructura-tarjeta {
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 3rem;
+}
