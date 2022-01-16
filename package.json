@@ -1,0 +1,22 @@
+{
+  "name": "buscadordecomics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZuriRuiz/BuscadorDeComics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZuriRuiz/BuscadorDeComics/issues"
+  },
+  "homepage": "https://github.com/ZuriRuiz/BuscadorDeComics#readme",
+  "dependencies": {
+    "sass": "^1.48.0"
+  }
+}

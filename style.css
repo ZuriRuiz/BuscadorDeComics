@@ -13,7 +13,6 @@
 .contenedor-tarjetas {
   display: flex;
   flex-wrap: wrap;
-
   border: 2px solid blue;
   padding: 20px;
   margin: 20px;
@@ -22,7 +21,6 @@
 #tarjetas-De-Personajes {
   display: flex;
   flex-wrap: wrap;
-
   border: 3px solid green;
 }
 
@@ -37,3 +35,9 @@
   width: 100%;
   height: 3rem;
 }
+
+.footer-style {
+  color: #a70b0b;
+}
+
+/*# sourceMappingURL=style.css.map */
