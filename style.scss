@@ -1,9 +1,18 @@
-$colorprincipal: rgb(167, 11, 11);
+$colorprincipal: rgb(0, 0, 0);
+$colorsecundario: #00B0C8;
+$colorborde : box-shadow 0 5px 20px rgba(34, 252, 6, 0.849);
+
+ 
+body{
+  background-color: $colorprincipal;
+  color: $colorsecundario;
+}
+
 
 .personaje {
   margin: 20px;
   padding: 20px;
-  border: 1px solid black;
+  box-shadow: $colorborde;
   border-radius: 10px;
 }
 
@@ -15,7 +24,6 @@ $colorprincipal: rgb(167, 11, 11);
 .contenedor-tarjetas {
   display: flex;
   flex-wrap: wrap;
-
   border: 2px solid blue;
   padding: 20px;
   margin: 20px;
@@ -25,13 +33,13 @@ $colorprincipal: rgb(167, 11, 11);
   display: flex;
   flex-wrap: wrap;
 
-  border: 3px solid green;
+  
 }
 
 .estructura-tarjeta {
   flex-direction: column;
   align-items: center;
-  border: 2px solid red;
+  border: $colorborde;
 }
 
 .form-control {
