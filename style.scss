@@ -1,18 +1,36 @@
 $colorprincipal: rgb(0, 0, 0);
+ prueba-sass
+$colorsecundario: #00b0c8;
+$colorborde: box-shadow 0 5px 20px rgba(34, 252, 6, 0.849);
+
+body {
+
 $colorsecundario: #00B0C8;
 $colorborde : box-shadow 0 5px 20px rgba(34, 252, 6, 0.849);
 
  
 body{
+ dev
   background-color: $colorprincipal;
   color: $colorsecundario;
 }
 
+ prueba-sass
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+dev
 
 .personaje {
   margin: 20px;
   padding: 20px;
+prueba-sass
+  box-shadow: 0 5px 20px rgba(34, 252, 6, 0.849);
+
   box-shadow: $colorborde;
+ dev
   border-radius: 10px;
 }
 
