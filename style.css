@@ -1,7 +1,12 @@
+body {
+  background-color: black;
+  color: #00B0C8;
+}
+
 .personaje {
   margin: 20px;
   padding: 20px;
-  border: 1px solid black;
+  box-shadow: box-shadow 0 5px 20px rgba(34, 252, 6, 0.849);
   border-radius: 10px;
 }
 
@@ -21,13 +26,12 @@
 #tarjetas-De-Personajes {
   display: flex;
   flex-wrap: wrap;
-  border: 3px solid green;
 }
 
 .estructura-tarjeta {
   flex-direction: column;
   align-items: center;
-  border: 2px solid red;
+  border: box-shadow 0 5px 20px rgba(34, 252, 6, 0.849);
 }
 
 .form-control {
@@ -37,7 +41,7 @@
 }
 
 .footer-style {
-  color: #a70b0b;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
