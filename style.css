@@ -1,12 +1,20 @@
 body {
   background-color: black;
+ prueba-sass
   color: #00b0c8;
+=======
+  color: #00B0C8;
+dev
 }
 
 .personaje {
   margin: 20px;
   padding: 20px;
+prueba-sass
   box-shadow: 0 5px 20px rgba(34, 252, 6, 0.849);
+=======
+  box-shadow: box-shadow 0 5px 20px rgba(34, 252, 6, 0.849);
+ dev
   border-radius: 10px;
 }
 
@@ -26,13 +34,12 @@ body {
 #tarjetas-De-Personajes {
   display: flex;
   flex-wrap: wrap;
-  border: 3px solid green;
 }
 
 .estructura-tarjeta {
   flex-direction: column;
   align-items: center;
-  border: 2px solid red;
+  border: box-shadow 0 5px 20px rgba(34, 252, 6, 0.849);
 }
 
 .form-control {
