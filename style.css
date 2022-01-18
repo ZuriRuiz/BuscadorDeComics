@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #050505;
   color: #00b0c8;
 }
 
@@ -12,7 +12,6 @@ nav {
   margin: 20px;
   padding: 20px;
   box-shadow: 0 5px 20px rgba(34, 252, 6, 0.849);
-  box-shadow: box-shadow 0 5px 20px rgba(34, 252, 6, 0.849);
   border-radius: 10px;
 }
 
@@ -24,7 +23,6 @@ nav {
 .contenedor-tarjetas {
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid blue;
   padding: 20px;
   margin: 20px;
 }
@@ -37,13 +35,22 @@ nav {
 .estructura-tarjeta {
   flex-direction: column;
   align-items: center;
-  border: box-shadow 0 5px 20px rgba(34, 252, 6, 0.849);
 }
 
 .form-control {
   display: block;
   width: 100%;
   height: 3rem;
+  margin: 40px;
+}
+
+.footer-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 20px;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
