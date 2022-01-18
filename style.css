@@ -1,7 +1,12 @@
+body {
+  background-color: black;
+  color: #00b0c8;
+}
+
 .personaje {
   margin: 20px;
   padding: 20px;
-  border: 1px solid black;
+  box-shadow: 0 5px 20px rgba(34, 252, 6, 0.849);
   border-radius: 10px;
 }
 
@@ -37,7 +42,7 @@
 }
 
 .footer-style {
-  color: #a70b0b;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

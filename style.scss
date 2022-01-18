@@ -1,9 +1,21 @@
-$colorprincipal: rgb(167, 11, 11);
+$colorprincipal: rgb(0, 0, 0);
+$colorsecundario: #00b0c8;
+$colorborde: box-shadow 0 5px 20px rgba(34, 252, 6, 0.849);
+
+body {
+  background-color: $colorprincipal;
+  color: $colorsecundario;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
 
 .personaje {
   margin: 20px;
   padding: 20px;
-  border: 1px solid black;
+  box-shadow: 0 5px 20px rgba(34, 252, 6, 0.849);
   border-radius: 10px;
 }
 
