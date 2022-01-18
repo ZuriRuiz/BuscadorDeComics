@@ -1,20 +1,18 @@
 body {
   background-color: black;
- prueba-sass
   color: #00b0c8;
-=======
-  color: #00B0C8;
-dev
+}
+
+nav {
+  display: flex;
+  justify-content: center;
 }
 
 .personaje {
   margin: 20px;
   padding: 20px;
-prueba-sass
   box-shadow: 0 5px 20px rgba(34, 252, 6, 0.849);
-=======
   box-shadow: box-shadow 0 5px 20px rgba(34, 252, 6, 0.849);
- dev
   border-radius: 10px;
 }
 
@@ -46,10 +44,6 @@ prueba-sass
   display: block;
   width: 100%;
   height: 3rem;
-}
-
-.footer-style {
-  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

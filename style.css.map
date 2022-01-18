@@ -1,5 +1,1 @@
- prueba-sass
-{"version":3,"sourceRoot":"","sources":["style.scss"],"names":[],"mappings":"AAGA;EACE,kBAJe;EAKf,OAJgB;;;AAOlB;EACE;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;EAEA;EACA;EACA;;;AAGF;EACE;EACA;EAEA;;;AAGF;EACE;EACA;EACA;;;AAGF;EACE;EACA;EACA;;;AAGF;EACE,OAjDe","file":"style.css"}
-=======
-{"version":3,"sourceRoot":"","sources":["style.scss"],"names":[],"mappings":"AAKA;EACE,kBANe;EAOf,OANgB;;;AAUlB;EACE;EACA;EACA,YAZY;EAaZ;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;EAEA;EACA;EACA;;;AAGF;EACE;EACA;;;AAKF;EACE;EACA;EACA,QAxCY;;;AA2Cd;EACE;EACA;EACA;;;AAGF;EACE,OApDe","file":"style.css"}
- dev
+{"version":3,"sourceRoot":"","sources":["style.scss"],"names":[],"mappings":"AAIA;EAEE,kBANe;EAOf,OANgB;;;AAUlB;EACE;EACA;;;AAIF;EACE;EACA;EACA;EACA,YAnBW;EAoBX;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;;;AAGF;EACE;EACA;EACA,QA5CW;;;AA+Cb;EACE;EACA;EACA","file":"style.css"}
