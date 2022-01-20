@@ -1,10 +1,12 @@
 //Elementos del HTML 
 
 const tarjetasDePersonajes = document.querySelector("#tarjetas-De-Personajes") 
+const paginaAnterior =  document.querySelector("#prev")
+const paginaSiguiente =  document.querySelector("#next")
 
 
 //Obtener informacion de los personajes de la api
-fetch("https://rickandmortyapi.com/api/character/?page=2")
+fetch("https://rickandmortyapi.com/api/character/?page=1")
 .then(res => res.json())
 .then((data) => {
     console.log(data)
@@ -30,4 +32,28 @@ const crearTarjeta = (array) => {
 
   tarjetasDePersonajes.innerHTML= html
   
+}
+
+let paginaActual = 1;
+
+const cambiarPagina = () => {
+   fetch(`https://rickandmortyapi.com/api/character/?page=${paginaActual}`)
+  .then((res) => res.json())
+  .then((data) => {
+    crearTarjeta(data.results)
+  })
+}
+
+cambiarPagina()
+
+
+paginaSiguiente.onclick = () => {
+  paginaActual = paginaActual + 1
+  cambiarPagina()
+ 
+}
+
+paginaAnterior.onclick = () => {
+  paginaActual = paginaActual -1
+  cambiarPagina()
 }
