@@ -4,6 +4,7 @@ $colorsecundario: #00b0c8;
 body {
   background-color: $colorprincipal;
   color: $colorsecundario;
+  font-family: "Creepster", cursive;
 }
 
 nav {
@@ -11,11 +12,50 @@ nav {
   justify-content: center;
 }
 
-.personaje {
+@mixin estilo-boton {
   margin: 20px;
   padding: 20px;
   box-shadow: 0 5px 20px rgba(34, 252, 6, 0.849);
   border-radius: 10px;
+  background-color: $colorprincipal;
+  color: $colorsecundario;
+}
+
+@mixin hover-blanco {
+  box-shadow: 0 5px 20px rgba(240, 248, 239, 0.849);
+}
+
+.personaje {
+  @include estilo-boton;
+  font-family: "Creepster", cursive;
+}
+
+.personaje:hover {
+  @include hover-blanco;
+}
+
+#prev {
+  @include estilo-boton;
+  font-family: "Creepster", cursive;
+  font-size: 20px;
+}
+
+#prev:hover {
+  @include hover-blanco;
+}
+#next {
+  @include estilo-boton;
+  font-family: "Creepster", cursive;
+  font-size: 20px;
+}
+
+#next:hover {
+  @include hover-blanco;
+}
+
+#control-botones {
+  display: flex;
+  justify-content: center;
 }
 
 #tarjetasDePersonajes {
@@ -57,11 +97,10 @@ nav {
   margin: 10px;
 }
 
-i{
+i {
   margin-left: 10px;
 }
 
-
-.texto-footer{
-   margin-left: 10px; 
+.texto-footer {
+  margin-left: 10px;
 }

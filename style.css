@@ -1,6 +1,7 @@
 body {
   background-color: #050505;
   color: #00b0c8;
+  font-family: "Creepster", cursive;
 }
 
 nav {
@@ -13,6 +14,48 @@ nav {
   padding: 20px;
   box-shadow: 0 5px 20px rgba(34, 252, 6, 0.849);
   border-radius: 10px;
+  background-color: #050505;
+  color: #00b0c8;
+  font-family: "Creepster", cursive;
+}
+
+.personaje:hover {
+  box-shadow: 0 5px 20px rgba(240, 248, 239, 0.849);
+}
+
+#prev {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(34, 252, 6, 0.849);
+  border-radius: 10px;
+  background-color: #050505;
+  color: #00b0c8;
+  font-family: "Creepster", cursive;
+  font-size: 20px;
+}
+
+#prev:hover {
+  box-shadow: 0 5px 20px rgba(240, 248, 239, 0.849);
+}
+
+#next {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(34, 252, 6, 0.849);
+  border-radius: 10px;
+  background-color: #050505;
+  color: #00b0c8;
+  font-family: "Creepster", cursive;
+  font-size: 20px;
+}
+
+#next:hover {
+  box-shadow: 0 5px 20px rgba(240, 248, 239, 0.849);
+}
+
+#control-botones {
+  display: flex;
+  justify-content: center;
 }
 
 #tarjetasDePersonajes {
