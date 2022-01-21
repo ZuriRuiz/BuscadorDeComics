@@ -35,6 +35,7 @@ const crearTarjeta = (array) => {
 };
 
 let paginaActual = 1;
+paginaAnterior.disabled = true;
 
 const cambiarPagina = () => {
   fetch(`https://rickandmortyapi.com/api/character/?page=${paginaActual}`)
@@ -46,12 +47,18 @@ const cambiarPagina = () => {
 
 cambiarPagina();
 
-paginaSiguiente.onclick = () => {
-  paginaActual = paginaActual + 1;
+paginaAnterior.onclick = () => {
+  paginaActual = paginaActual - 1;
+  if (paginaActual === 1) {
+    paginaAnterior.disabled = true;
+  }
+  console.log(paginaActual);
   cambiarPagina();
 };
 
-paginaAnterior.onclick = () => {
-  paginaActual = paginaActual - 1;
+paginaSiguiente.onclick = () => {
+  paginaAnterior.disabled = false;
+  paginaActual = paginaActual + 1;
+  console.log(paginaActual);
   cambiarPagina();
 };
