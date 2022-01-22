@@ -12,17 +12,16 @@ fetch("https://rickandmortyapi.com/api/character/?page=1")
     crearTarjeta(data.results);
   });
 
+//Creamos tarjetas
+
 const crearTarjeta = (array) => {
   const html = array.reduce((acc, curr) => {
     return (
       acc +
       `
-      
         <div class="contenedor-tarjetas">
           <article class = "personaje"> 
               <h2>${curr.name}</h2>
-              <p>${curr.status}</p>
-              <p>${curr.species}</p>
               <img src="${curr.image}"</img>
           </article>
         </div>
@@ -46,6 +45,8 @@ const cambiarPagina = () => {
 };
 
 cambiarPagina();
+
+/*Funcionalidad botones*/
 
 paginaAnterior.onclick = () => {
   paginaActual = paginaActual - 1;
