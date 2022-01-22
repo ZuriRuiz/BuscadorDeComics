@@ -3,6 +3,8 @@
 const tarjetasDePersonajes = document.querySelector("#tarjetas-De-Personajes");
 const paginaAnterior = document.querySelector("#prev");
 const paginaSiguiente = document.querySelector("#next");
+const formControl = document.querySelector("#form-control");
+const formInput = document.querySelector("#form-input");
 
 //Obtener informacion de los personajes de la api
 fetch("https://rickandmortyapi.com/api/character/?page=1")
@@ -62,4 +64,19 @@ paginaSiguiente.onclick = () => {
   paginaActual = paginaActual + 1;
   console.log(paginaActual);
   cambiarPagina();
+};
+
+// Busqueda Personaje
+const buscarInfo = (busquedapersonaje) => {
+  fetch(`https://rickandmortyapi.com/api/character/?name=${busquedapersonaje}`)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+      crearTarjeta(data.results);
+    });
+};
+
+formControl.onsubmit = (e) => {
+  e.preventDefault();
+  buscarInfo(formInput.value);
 };
