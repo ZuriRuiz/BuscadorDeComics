@@ -81,11 +81,17 @@ nav {
   align-items: center;
 }
 
-.form-control {
+#form-control{
+  display: flex;
+  justify-content: center;
+}
+
+.input-style {
   display: block;
-  width: 100%;
+  width: 35%;
   height: 3rem;
   margin: 40px;
+  
 }
 
 .footer-style {
