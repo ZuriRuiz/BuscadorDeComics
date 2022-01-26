@@ -17,6 +17,9 @@ nav {
   background-color: #050505;
   color: #00b0c8;
   font-family: "Creepster", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .personaje:hover {
@@ -108,6 +111,23 @@ i {
 
 .texto-footer {
   margin-left: 10px;
+}
+
+#detalle-tarjeta {
+  display: none;
+}
+
+.estilo-tarjeta-nueva {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(34, 252, 6, 0.849);
+  border-radius: 10px;
+  background-color: #050505;
+  color: #00b0c8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
 }
 
 /*centrar nombre tarjetas*/

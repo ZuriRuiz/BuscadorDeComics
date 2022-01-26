@@ -3,8 +3,13 @@
 const tarjetasDePersonajes = document.querySelector("#tarjetas-De-Personajes");
 const paginaAnterior = document.querySelector("#prev");
 const paginaSiguiente = document.querySelector("#next");
+const controlBotones = document.querySelector("#control-botones")
 const formControl = document.querySelector("#form-control");
 const formInput = document.querySelector("#form-input");
+const seccionDetalle = document.querySelector("#detalle-tarjeta")
+const tarjetaNueva = document.querySelector("#tarjeta-nueva")
+const estiloTarjeta = document.querySelector(".estilo-tarjeta-nueva")
+
 
 //Obtener informacion de los personajes de la api
 fetch("https://rickandmortyapi.com/api/character/?page=1")
@@ -41,9 +46,28 @@ const buscarPersonaje = (id) => {
   fetch(`https://rickandmortyapi.com/api/character/${id}`)
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
+      crearTarjetaDetalle(data)
+      
     });
 };
+
+const crearTarjetaDetalle = (data) => {
+  tarjetasDePersonajes.style.display = "none"
+  seccionDetalle.style.display = "flex"
+  controlBotones.style.display = "none"
+  estiloTarjeta.classList.add("estilo-tarjeta-nueva")
+  tarjetaNueva.innerHTML = `
+    <article class="detalle-tarjeta">
+      <h2>${data.name}</h2>
+      <img src="${data.image}"</img>
+      <p>Status:${data.status}</p>
+      <p>Species:${data.species}</p>
+      <p>Origin:${data.origin.name}</p>
+      <p>Gender:${data.gender}</p>
+    </article>
+  `
+}
+
 
 const clickTarjetas = () => {
   const tarjetas = document.querySelectorAll(".personaje");
