@@ -28,6 +28,9 @@ nav {
 .personaje {
   @include estilo-boton;
   font-family: "Creepster", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .personaje:hover {
@@ -110,5 +113,20 @@ i {
 .texto-footer {
   margin-left: 10px;
 }
+
+#detalle-tarjeta{
+  display: none;
+}
+
+.estilo-tarjeta-nueva{
+  @include estilo-boton;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  
+}
+
+
 
 /*centrar nombre tarjetas*/
