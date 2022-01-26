@@ -32,8 +32,10 @@ const crearTarjeta = (array) => {
   }, "");
 
   tarjetasDePersonajes.innerHTML = html;
+  clickTarjetas();
 };
-/*traer por id*/
+
+/*Traer por id*/
 
 const buscarPersonaje = (id) => {
   fetch(`https://rickandmortyapi.com/api/character/${id}`)
@@ -48,7 +50,7 @@ const clickTarjetas = () => {
 
   for (let i = 0; i < tarjetas.length; i++) {
     tarjetas[i].onclick = () => {
-      const id = tarjetas[i].dataset.sid;
+      const id = tarjetas[i].dataset.id;
       buscarPersonaje(id);
     };
   }
