@@ -15,14 +15,13 @@ fetch("https://rickandmortyapi.com/api/character/?page=1")
   });
 
 //Creamos tarjetas
-
 const crearTarjeta = (array) => {
   const html = array.reduce((acc, curr) => {
     return (
       acc +
       `
         <div class="contenedor-tarjetas">
-          <article class = "personaje"> 
+          <article class = "personaje" data-id="${curr.id}"> 
               <h2>${curr.name}</h2>
               <img src="${curr.image}"</img>
           </article>
@@ -33,8 +32,31 @@ const crearTarjeta = (array) => {
   }, "");
 
   tarjetasDePersonajes.innerHTML = html;
+  clickTarjetas();
 };
 
+/*Traer por id*/
+
+const buscarPersonaje = (id) => {
+  fetch(`https://rickandmortyapi.com/api/character/${id}`)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+    });
+};
+
+const clickTarjetas = () => {
+  const tarjetas = document.querySelectorAll(".personaje");
+
+  for (let i = 0; i < tarjetas.length; i++) {
+    tarjetas[i].onclick = () => {
+      const id = tarjetas[i].dataset.id;
+      buscarPersonaje(id);
+    };
+  }
+};
+
+// Paginado
 let paginaActual = 1;
 paginaAnterior.disabled = true;
 
