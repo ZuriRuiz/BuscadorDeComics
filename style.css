@@ -130,6 +130,10 @@ i {
   height: 600px;
 }
 
+#tarjeta-nueva {
+  margin: auto;
+}
+
 /*centrar nombre tarjetas*/
 
 /*# sourceMappingURL=style.css.map */

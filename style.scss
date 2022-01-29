@@ -84,7 +84,7 @@ nav {
   align-items: center;
 }
 
-#form-control{
+#form-control {
   display: flex;
   justify-content: center;
 }
@@ -94,7 +94,6 @@ nav {
   width: 35%;
   height: 3rem;
   margin: 40px;
-  
 }
 
 .footer-style {
@@ -114,19 +113,20 @@ i {
   margin-left: 10px;
 }
 
-#detalle-tarjeta{
+#detalle-tarjeta {
   display: none;
 }
 
-.estilo-tarjeta-nueva{
+.estilo-tarjeta-nueva {
   @include estilo-boton;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 600px;
-  
 }
 
-
+#tarjeta-nueva {
+  margin: auto;
+}
 
 /*centrar nombre tarjetas*/
