@@ -1,4 +1,4 @@
-### Bienvenides al proyecto: Rick and Morty Browser
+## Bienvenides al proyecto: Rick and Morty Browser
 
 ------------
 
@@ -11,7 +11,7 @@ Para lograr esto utilizamos una API REST con datos reales, realizamos consultas 
 
 
 ------------
-###Website:
+### Website:
 
 [Click aqui para ver la pagina del proyecto](http://https://rickandmorty-browser.netlify.app/ "Click aqui para ver la pagina del proyecto")
 
@@ -21,7 +21,7 @@ Para lograr esto utilizamos una API REST con datos reales, realizamos consultas 
 ------------
 
 
-###Funcionalidad:
+### Funcionalidad:
 
 
 - **Al ingresar a la pagina muestra un listado de los recursos principales en forma de *cards***.
@@ -35,7 +35,7 @@ Para lograr esto utilizamos una API REST con datos reales, realizamos consultas 
 ------------
 
 
-###Realizado con:
+### Realizado con:
 
 
 
@@ -47,7 +47,7 @@ Para lograr esto utilizamos una API REST con datos reales, realizamos consultas 
 
 
 ------------
-###Recursos:
+### Recursos:
 
 - Font Awesome - Íconos
 - Google Fonts - Fuente
@@ -56,7 +56,7 @@ Para lograr esto utilizamos una API REST con datos reales, realizamos consultas 
 ------------
 
 
-###Integrantes:
+### Integrantes:
 - Codazzi, Carla
 - Kischner, Jennifer
 - Ruiz, Zuri
