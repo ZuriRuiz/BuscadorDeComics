@@ -12,7 +12,6 @@ Para lograr esto utilizamos una API REST con datos reales, realizamos consultas 
 
 ------------
 ### Website:
-
 [Click aqui para ver la pagina del proyecto](https://rickandmorty-browser.netlify.app/ "Click aqui para ver la pagina del proyecto")
 
 
@@ -43,7 +42,7 @@ Para lograr esto utilizamos una API REST con datos reales, realizamos consultas 
 - JAVASCRIPT
 - SASS
 - CSS
-- Deploy con Netlify: [http://https://rickandmorty-browser.netlify.app/](http://https://rickandmorty-browser.netlify.app/)
+- Deploy con Netlify:  https://rickandmorty-browser.netlify.app/
 
 
 ------------
