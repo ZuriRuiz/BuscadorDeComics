@@ -9,6 +9,7 @@ const formInput = document.querySelector("#form-input");
 const seccionDetalle = document.querySelector("#detalle-tarjeta");
 const tarjetaNueva = document.querySelector("#tarjeta-nueva");
 const estiloTarjeta = document.querySelector(".estilo-tarjeta-nueva");
+const buttonBack = document.querySelector(".button-back");
 
 //Obtener informacion de los personajes de la api
 fetch("https://rickandmortyapi.com/api/character/?page=1")
@@ -107,6 +108,12 @@ paginaSiguiente.onclick = () => {
   paginaActual = paginaActual + 1;
   console.log(paginaActual);
   cambiarPagina();
+};
+
+buttonBack.onclick = () => {
+  tarjetasDePersonajes.style.display = "flex";
+  seccionDetalle.style.display = "none";
+  controlBotones.style.display = "none";
 };
 
 // Busqueda Personaje

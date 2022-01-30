@@ -152,18 +152,9 @@ i {
   margin: auto;
 }
 
-.button-back:hover {
-  box-shadow: 0 5px 20px rgba(240, 248, 239, 0.849);
-}
-
 .detalle-tarjeta-control {
   display: flex;
-  flex-direction: column;
-  margin: auto;
+  justify-content: center;
 }
 
-.detalle-tarjeta:hover {
-  box-shadow: 0 5px 20px rgba(240, 248, 239, 0.849);
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styel.css.map */
