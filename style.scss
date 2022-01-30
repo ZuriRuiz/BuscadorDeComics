@@ -1,0 +1,153 @@
+$colorprincipal: rgb(5, 5, 5);
+$colorsecundario: #00b0c8;
+
+body {
+  background-color: $colorprincipal;
+  color: $colorsecundario;
+  font-family: "Creepster", cursive;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin estilo-boton {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(34, 252, 6, 0.849);
+  border-radius: 10px;
+  background-color: $colorprincipal;
+  color: $colorsecundario;
+  font-family: "Creepster", cursive;
+}
+
+@mixin hover-blanco {
+  box-shadow: 0 5px 20px rgba(240, 248, 239, 0.849);
+}
+
+.personaje {
+  @include estilo-boton;
+  font-family: "Creepster", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personaje:hover {
+  @include hover-blanco;
+}
+
+#prev {
+  @include estilo-boton;
+  font-family: "Creepster", cursive;
+  font-size: 20px;
+}
+
+#prev:hover {
+  @include hover-blanco;
+}
+#next {
+  @include estilo-boton;
+  font-family: "Creepster", cursive;
+  font-size: 20px;
+}
+
+#next:hover {
+  @include hover-blanco;
+}
+
+#control-botones {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+
+#tarjetasDePersonajes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 20px;
+}
+
+#tarjetas-De-Personajes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.estructura-tarjeta {
+  flex-direction: column;
+  align-items: center;
+}
+
+#form-control {
+  display: flex;
+  justify-content: center;
+}
+
+.input-style {
+  display: block;
+  width: 35%;
+  height: 3rem;
+  margin: 40px;
+}
+
+.footer-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 20px;
+  margin: 5%;
+}
+
+i {
+  margin-left: 10px;
+}
+
+.texto-footer {
+  margin-left: 10px;
+}
+
+#detalle-tarjeta {
+  display: none;
+}
+
+.estilo-tarjeta-nueva {
+  @include estilo-boton;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+}
+
+#tarjeta-nueva {
+  margin: auto;
+}
+
+/*centrar nombre tarjetas*/
+
+.button-back {
+  @include estilo-boton;
+  height: 60px;
+  width: 100px;
+  margin: auto;
+}
+.button-back:hover {
+  @include hover-blanco;
+}
+
+.detalle-tarjeta-control {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.detalle-tarjeta:hover {
+  @include hover-blanco;
+}

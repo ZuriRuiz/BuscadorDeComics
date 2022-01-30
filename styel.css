@@ -1,0 +1,160 @@
+body {
+  background-color: #050505;
+  color: #00b0c8;
+  font-family: "Creepster", cursive;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.personaje {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(34, 252, 6, 0.849);
+  border-radius: 10px;
+  background-color: #050505;
+  color: #00b0c8;
+  font-family: "Creepster", cursive;
+  font-family: "Creepster", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personaje:hover {
+  box-shadow: 0 5px 20px rgba(240, 248, 239, 0.849);
+}
+
+#prev {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(34, 252, 6, 0.849);
+  border-radius: 10px;
+  background-color: #050505;
+  color: #00b0c8;
+  font-family: "Creepster", cursive;
+  font-family: "Creepster", cursive;
+  font-size: 20px;
+}
+
+#prev:hover {
+  box-shadow: 0 5px 20px rgba(240, 248, 239, 0.849);
+}
+
+#next {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(34, 252, 6, 0.849);
+  border-radius: 10px;
+  background-color: #050505;
+  color: #00b0c8;
+  font-family: "Creepster", cursive;
+  font-family: "Creepster", cursive;
+  font-size: 20px;
+}
+
+#next:hover {
+  box-shadow: 0 5px 20px rgba(240, 248, 239, 0.849);
+}
+
+#control-botones {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+
+#tarjetasDePersonajes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 20px;
+}
+
+#tarjetas-De-Personajes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.estructura-tarjeta {
+  flex-direction: column;
+  align-items: center;
+}
+
+#form-control {
+  display: flex;
+  justify-content: center;
+}
+
+.input-style {
+  display: block;
+  width: 35%;
+  height: 3rem;
+  margin: 40px;
+}
+
+.footer-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 20px;
+  margin: 5%;
+}
+
+i {
+  margin-left: 10px;
+}
+
+.texto-footer {
+  margin-left: 10px;
+}
+
+#detalle-tarjeta {
+  display: none;
+}
+
+.estilo-tarjeta-nueva {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(34, 252, 6, 0.849);
+  border-radius: 10px;
+  background-color: #050505;
+  color: #00b0c8;
+  font-family: "Creepster", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+}
+
+#tarjeta-nueva {
+  margin: auto;
+}
+
+/*centrar nombre tarjetas*/
+.button-back {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(34, 252, 6, 0.849);
+  border-radius: 10px;
+  background-color: #050505;
+  color: #00b0c8;
+  font-family: "Creepster", cursive;
+  height: 60px;
+  width: 100px;
+  margin: auto;
+}
+
+.detalle-tarjeta-control {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=styel.css.map */
