@@ -13,7 +13,7 @@ Para lograr esto utilizamos una API REST con datos reales, realizamos consultas 
 ------------
 ### Website:
 
-[Click aqui para ver la pagina del proyecto](http://https://rickandmorty-browser.netlify.app/ "Click aqui para ver la pagina del proyecto")
+[Click aqui para ver la pagina del proyecto](https://rickandmorty-browser.netlify.app/ "Click aqui para ver la pagina del proyecto")
 
 
 ![](https://p4.wallpaperbetter.com/wallpaper/441/548/891/rick-and-morty-car-rainbow-wallpaper-preview.jpg)
