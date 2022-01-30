@@ -19,6 +19,7 @@ nav {
   border-radius: 10px;
   background-color: $colorprincipal;
   color: $colorsecundario;
+  font-family: "Creepster", cursive;
 }
 
 @mixin hover-blanco {
@@ -130,3 +131,23 @@ i {
 }
 
 /*centrar nombre tarjetas*/
+
+.button-back {
+  @include estilo-boton;
+  height: 60px;
+  width: 100px;
+  margin: auto;
+}
+.button-back:hover {
+  @include hover-blanco;
+}
+
+.detalle-tarjeta-control {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.detalle-tarjeta:hover {
+  @include hover-blanco;
+}
