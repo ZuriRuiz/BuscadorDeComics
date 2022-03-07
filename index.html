@@ -12,6 +12,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <!-- No es correcta esta manera de importar tipografias en html, deben usar el link de html -->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
     </style>
@@ -19,6 +20,7 @@
 
   <body>
     <nav>
+      <!-- siempre pongan un alt en sus imagenes -->
       <img
         src="https://p4.wallpaperbetter.com/wallpaper/441/548/891/rick-and-morty-car-rainbow-wallpaper-preview.jpg"
       />
@@ -26,6 +28,7 @@
 
     <main>
       <form id="form-control">
+        <!-- si no hay label, el input debe tener aria-label -->
         <input
           id="form-input"
           type="text"
@@ -34,6 +37,7 @@
         />
       </form>
 
+      <!-- no usen mayusculas en ids o clases -->
       <div id="tarjetas-De-Personajes"></div>
 
       <div id="control-botones">
@@ -54,6 +58,7 @@
       <tr>
         <td>
           <p class="texto-footer">Carla Codazzi</p>
+          <!-- pongan un aria label en sus links si no tienen texto -->
           <a class="link" href="https://github.com/charicodazzi" target="_blank"
             ><i class="fab fa-github"></i
           ></a>

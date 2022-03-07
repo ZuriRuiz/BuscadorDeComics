@@ -8,6 +8,7 @@ const formControl = document.querySelector("#form-control");
 const formInput = document.querySelector("#form-input");
 const seccionDetalle = document.querySelector("#detalle-tarjeta");
 const tarjetaNueva = document.querySelector("#tarjeta-nueva");
+// nunca usan esta variable
 const estiloTarjeta = document.querySelector(".estilo-tarjeta-nueva");
 const buttonBack = document.querySelector(".button-back");
 
@@ -15,6 +16,7 @@ const buttonBack = document.querySelector(".button-back");
 fetch("https://rickandmortyapi.com/api/character/?page=1")
   .then((res) => res.json())
   .then((data) => {
+    // no dejen console log en una entrega
     console.log(data);
     crearTarjeta(data.results);
   });
@@ -79,6 +81,7 @@ const clickTarjetas = () => {
 };
 
 // Paginado
+// las variables globales deben estar definidas arriba de las funciones
 let paginaActual = 1;
 paginaAnterior.disabled = true;
 
@@ -90,22 +93,27 @@ const cambiarPagina = () => {
     });
 };
 
+// las funciones que se ejecutan apenas carga la pagina deben estar al final de todo
 cambiarPagina();
 
 /*Funcionalidad botones*/
 
 paginaAnterior.onclick = () => {
+  // mejor decir paginaActual--
   paginaActual = paginaActual - 1;
   if (paginaActual === 1) {
     paginaAnterior.disabled = true;
   }
+  // no dejen console log
   console.log(paginaActual);
   cambiarPagina();
 };
 
 paginaSiguiente.onclick = () => {
   paginaAnterior.disabled = false;
+  // mejor decir paginaActual++
   paginaActual = paginaActual + 1;
+  // no dejen console log
   console.log(paginaActual);
   cambiarPagina();
 };
@@ -118,9 +126,11 @@ buttonBack.onclick = () => {
 
 // Busqueda Personaje
 const buscarInfo = (busquedapersonaje) => {
+  // esto no me permite cambiar de pagina en la busqueda, deberia incluir paginaActual
   fetch(`https://rickandmortyapi.com/api/character/?name=${busquedapersonaje}`)
     .then((res) => res.json())
     .then((data) => {
+      // no dejen console log
       console.log(data);
       crearTarjeta(data.results);
     });
