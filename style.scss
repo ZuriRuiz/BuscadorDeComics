@@ -1,5 +1,6 @@
 $colorprincipal: rgb(5, 5, 5);
 $colorsecundario: #00b0c8;
+// repiten la tipografia muchas veces, deberia ser una variable. mismo el font size
 
 body {
   background-color: $colorprincipal;
@@ -25,7 +26,7 @@ nav {
 @mixin hover-blanco {
   box-shadow: 0 5px 20px rgba(240, 248, 239, 0.849);
 }
-
+// no aprovechan el anidado
 .personaje {
   @include estilo-boton;
   font-family: "Creepster", cursive;
@@ -37,7 +38,7 @@ nav {
 .personaje:hover {
   @include hover-blanco;
 }
-
+// muy buen uso de mixins
 #prev {
   @include estilo-boton;
   font-family: "Creepster", cursive;
